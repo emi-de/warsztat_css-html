@@ -7,13 +7,89 @@
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('raleway-regular.woff2') format('woff2'),
-    url('raleway-regular.woff') format('woff');
+    src: url('../fonts/raleway-regular.woff2') format('woff2'),
+    url('../fonts/raleway-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
     font-family: ralewayregular, Arial, sans-serif;
+}
+
+.main-width {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: #000;
+}
+
+.header_box {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.logo span {
+    color: #63CCB8;
+    font-weight: 700;
+}
+
+nav {
+    width: 50%;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu-item {
+    width: 20%;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: end;
+    /*margin-left: 40px;*/
+    position: relative;
+}
+/*sprawdzić padding menu-item*/
+
+.menu-underlist {
+    list-style: none;
+    background-color: #000;
+    text-align: start;
+    padding: 15px;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 25%;
+    text-transform: none;
+}
+/*sprawdzić padding menu-underlist*/
+
+
+.menu-underlist:before {
+    content: "\25b2";
+    color: #000;
+    font-size: 25px;
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: calc(50% - 15px);
 }
 
