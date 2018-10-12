@@ -86,10 +86,106 @@ nav {
 .menu-underlist:before {
     content: "\25b2";
     color: #000;
-    font-size: 25px;
+    font-size: 26px;
     display: block;
     position: absolute;
     top: -20px;
-    left: calc(50% - 15px);
+    left: calc(50% - 13px);
 }
 
+.banner {
+    background-image: linear-gradient(180deg, #fff, #D1D0D8);
+    width: 100%;
+}
+
+.box-banner {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.image {
+    width: 40%;
+    height: 100%;
+    background-image: url("../images/black_chair.png");
+    background-size: 145%;
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    display: block;
+
+}
+
+.description {
+    width: 50%;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h1 span {
+    color: #63CCB8;
+    font-weight: 900;
+}
+
+.description p {
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    text-align: center;
+    padding: 30px;
+    line-height: 20px;
+}
+
+.button {
+    width:264px;
+    height: 52px;
+    background-color: #63CCB8;
+    border-radius: 10px;
+    margin: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.box-banner:before {
+    content: "\003C";
+    width: auto;
+    height: auto;
+    font-size: 75px;
+    color: #63CCB8;
+    display: block;
+    position: absolute;
+    top: 200px;
+    left: 0;
+}
+
+.box-banner:after {
+    content: "\003E";
+    width: auto;
+    height: auto;
+    font-size: 75px;
+    color: #63CCB8;
+    display: block;
+    position: absolute;
+    top: 200px;
+    right: 0;
+}
