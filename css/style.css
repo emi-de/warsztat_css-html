@@ -193,13 +193,12 @@ h1 span {
 .small_boxes {
     height: 350px;
     padding-top: 25px;
-    padding-left: 5px;
     display: flex;
     justify-content: space-between;
 }
 
 .small_boxOne {
-    width: 32%;
+    width: 31%;
     height: 100%;
     background-image: url("../images/box1_img.jpg");
     background-repeat: no-repeat;
@@ -254,4 +253,176 @@ h1 span {
 .small_boxThree .title {
     margin: 0;
     text-align: left;
+}
+
+.pricelist {
+    width: 100%;
+    height: 750px;
+    background-color: #f1f1f1;
+}
+
+.title_box {
+    height: 130px;
+    display: flex;
+    align-items: center;
+}
+
+.title_box .title {
+    width: 30%;
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 8px solid #63CCB8;
+}
+
+.price_box {
+    width: 100%;
+    height: 500px;
+    margin: 25px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.price_boxOne, .price_boxTwo, .price_boxThree {
+    width: 31%;
+    border: 1px solid lawngreen;
+    text-align: center;
+    position: relative;
+}
+
+.price_boxOne {
+   background-color: #F7F7F7;
+    border: 2px solid #D1D0D8;
+
+}
+
+.price_boxTwo {
+    background-color: #63CCB8;
+    border: 2px solid #63CCB8;
+}
+
+.price_box .price_boxTwo h2 {
+    color: #fff;
+}
+
+.price_boxTwo .price_circle {
+    border: 2px solid #63CCB8;
+    color: #63CCB8;
+}
+
+.price_box .price_boxTwo li:nth-child(odd) {
+    background-color: #fff;
+}
+
+.price_boxTwo .price_button {
+    background-color: #fff;
+    color: #63CCB8;
+}
+
+.price_boxThree {
+    background-color: #F7F7F7;
+    border: 2px solid #D1D0D8;
+}
+
+.price_circle {
+    width: 130px;
+    height: 130px;
+    background-color: #fff;
+    color: #A3A3A3;
+    border: 2px solid #D1D0D8;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.price_circle p {
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.price_circle sup {
+    font-size: 15px;
+}
+
+.price_circle p + p {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.price_box ul {
+    list-style: none;
+    padding: 30px 0;
+}
+
+.price_box li {
+    width: 100%;
+    font-size: 25px;
+    line-height: 45px;
+    color: #A3A3A3;
+    text-align: center;
+}
+
+.price_box li:nth-child(odd) {
+    background-color: #E4E4E4;
+}
+
+.price_box li:nth-child(even) {
+    background-color: #F1F1F1;
+}
+
+.pricelist h2 {
+    padding: 30px;
+    color: #63CCB8;
+    font-size: 21px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.price_button {
+    width: 38%;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 32px;
+    border-radius: 10px;
+    background-color: #63CCB8;
+    color: #fff;
+    position: absolute;
+    bottom: 18px;
+    left: calc(50% - 19%);
+}
+
+.up_circle_border {
+    width: 56px;
+    height: 56px;
+    background-color: #fff;
+    border: 2px solid #D1D0D8;
+    border-radius: 50%;
+    position: absolute;
+    top: -36px;
+    left: calc(50% - 28px);
+}
+
+.up_circle_middle {
+    width: 26px;
+    height: 26px;
+    background-color: #A3A3A3;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 13px);
+    left: calc(50% - 13px);
+}
+
+.price_boxTwo .up_circle_border {
+    background-color: #63CCB8;
+    border: none;
+}
+
+.price_boxTwo .up_circle_middle {
+    background-color: #fff;
 }
